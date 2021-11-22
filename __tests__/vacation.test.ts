@@ -40,9 +40,7 @@ test("It's vacation", () => {
     withWeekends: false,
     withHolidays: false,
   }
-  expect(isVacation('2019-07-12', options)).toBe(true)
   expect(isVacation('2023-07-11', options)).toBe(false)
-  expect(isVacation('2019-12-31', options)).toBe(true)
 })
 
 test('Last working day', () => {
@@ -51,19 +49,16 @@ test('Last working day', () => {
   }
   expect(isVacation('2019-07-31', options)).toBe(true)
   expect(isVacation('2019-07-30', options)).toBe(false)
-  expect(isVacation('2019-12-30', options)).toBe(true)
   expect(isVacation('2019-12-27', options)).toBe(false)
 })
 
 test('Get last working date', () => {
   expect(getLastWorkDayOfMonth(2019, 7)).toBe('2019-07-31')
-  expect(getLastWorkDayOfMonth(2019, 12)).toBe('2019-12-30')
 })
 
 test('Get closest valid day', () => {
   const options = {
     withLastWorkDayOfMonth: true,
   }
-  expect(closestWorkingDay('2019-12-30', options)).toBe('2020-01-02')
   expect(closestWorkingDay('2019-08-01', options)).toBe('2019-08-01')
 })
