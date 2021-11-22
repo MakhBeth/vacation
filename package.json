@@ -14,9 +14,6 @@
   },
   "author": "",
   "license": "ISC",
-  "publishConfig": {
-    "registry": "https://instapartners.jfrog.io/artifactory/api/npm/makhBeth-npm-private/"
-  },
   "bugs": {
     "url": "https://github.com/makhBeth/vacation/issues"
   },
