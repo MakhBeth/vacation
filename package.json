@@ -1,6 +1,6 @@
 {
   "name": "italian-vacation",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "'MakhBeth Vacations, Weekends and others days we don't want to do Loans or Advances'",
   "main": "dist/index.js",
   "scripts": {
